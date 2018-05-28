@@ -1,21 +1,21 @@
 {
     "name": "jquery.qqface",
-    "version": "1.0.1",
-    "description": "The jQuery Plugin of qqface",
+    "version": "1.0.2",
+    "description": "The jQuery plugin of qqface",
     "scripts": {
         "dev": "webpack --mode development",
         "build": "webpack --mode production"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kyo4311/jquery.qqface.git"
+        "url": "https://github.com/bin20060407/jquery.qqface.git"
     },
     "author": "guosheng",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/kyo4311/jquery.qqface/issues"
+        "url": "https://github.com/bin20060407/jquery.qqface/issues"
     },
-    "homepage": "https://github.com/kyo4311/jquery.qqface",
+    "homepage": "https://github.com/bin20060407/jquery.qqface",
     "dependencies": {},
     "private": true,
     "devDependencies": {
