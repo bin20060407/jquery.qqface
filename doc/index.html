@@ -89,7 +89,7 @@
 
             var textarea = $(this);
             var value = $(this).val();
-            var length = getLenth(value);
+            var length = getLength(value);
             if (length > 200) {
                 textarea.val(oldLength);
             } else {
@@ -99,29 +99,28 @@
         });
 
 
-        function getLenth(str) {
-            str = str.replace(/\[:([\s\S]+?)\]/g, 'F'); //把所有表情都变成F，一个字符
-            str = str.replace(/[\u4e00-\u9fa5]/g, 'CN'); //把所有表情都变成F，一个字符 
+        function getLength(str) {
+            str = str.replace(/\[em_(\d+)\]/g, 'F'); //把所有表情都变成F，一个字符
+            str = str.replace(/[\u4e00-\u9fa5]/g, 'C'); //把所有汉字都变成C，一个字符 
             return str.length;
         }
 
         $.qqface({
             before: function (textarea, code) {
                 var value = textarea.val();
-                var length = getLenth(value);
+                var length = getLength(value);
                 return length < 199;
 
             }, //要在插入之前执行
             after: function (textarea, code) {
 
                 var value = textarea.val();
-                var length = getLenth(value);
+                var length = getLength(value);
 
                 $('#left').html('还可以输入' + (200 - length) + '个字符');
 
                 $('#liveChatContent').change();
             }, //在插入之后执行
-            imgPath: 'gif/',
             textarea: $('#liveChatContent'),
             handle: $('#face'),
         });

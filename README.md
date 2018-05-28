@@ -12,6 +12,14 @@ jQuery QQ 表情插件。
 查看：示例：[https://bin20060407.github.io/jquery.qqface/doc/index.html](https://bin20060407.github.io/jquery.qqface/doc/index.html)  
 ![QQ表情插件示例](./src/images/qqface-bg.png)
 
+# 更新历史
+## 1.0.2
+
+1. 表情选择由gif转为png，避免一次性载入太多图片
+2. 表情数量扩充为105
+3. css 样式改为独立
+4. 去掉“imgPath”参数
+
 # 开始使用
 1. 引入jQuery
 2. 引入jquery.qqface.css
@@ -27,9 +35,8 @@ jQuery QQ 表情插件。
 
 ## js
 ```js
-//看起来很简单！
+// 看起来很简单！
 $.qqface({
-    imgPath : 'gif/',
     textarea : $('#liveChatContent'),
     handle : $('#face')
 });
@@ -187,7 +194,7 @@ npm run build
 注：
 符号对应微信公众号表情符号
 
-# todo
+# Todo
 - [ ] 新增js、PHP最终显示表情说明
 - [ ] css 样式支持分离和一起
 - [ ] 公布到npm
