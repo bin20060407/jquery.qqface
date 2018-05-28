@@ -9,7 +9,7 @@
 jQuery QQ 表情插件。     
 点击一个按钮，弹出一个选择QQ表情的组件，点击即可选择表情，插入到textara里面。
 
-查看：示例：http://bin20060407.github.io/jquery.qqface/   
+查看：示例：[https://bin20060407.github.io/jquery.qqface/doc/index.html](https://bin20060407.github.io/jquery.qqface/doc/index.html)  
 ![QQ表情插件示例](./src/images/qqface-bg.png)
 
 # 开始使用
