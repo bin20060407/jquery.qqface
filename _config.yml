@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+title: jQuery.qqface
+description: QQ 表情插件 For jQuery
+google_analytics: UA-119994284-1
+show_downloads: true
+theme: jekyll-theme-architect

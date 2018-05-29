@@ -1,16 +1,16 @@
-# From
-从 [http://kyo4311.github.io/jquery.qqface/](http://kyo4311.github.io/jquery.qqface/ "原项目")  修改而来，根据实际项目做了相应调整
 
 # jquery.qqface
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?style=plastic)](https://github.com/bin20060407/jquery.qqface)
 
-
-
 jQuery QQ 表情插件。     
 点击一个按钮，弹出一个选择QQ表情的组件，点击即可选择表情，插入到textara里面。
 
-查看：示例：[https://bin20060407.github.io/jquery.qqface/doc/index.html](https://bin20060407.github.io/jquery.qqface/doc/index.html)  
+查看示例：[https://bin20060407.github.io/jquery.qqface/doc/index.html](https://bin20060407.github.io/jquery.qqface/doc/index.html)  
 ![QQ表情插件示例](./src/images/qqface-bg.png)
+
+# From
+从 [http://kyo4311.github.io/jquery.qqface/](http://kyo4311.github.io/jquery.qqface/ "原项目")  修改而来，根据实际项目做了相应调整
+
 
 # 更新历史
 ## 1.0.2
@@ -70,12 +70,12 @@ $.qqface({
 ```
 
 # 参数列表
-参数 | 类型 | 说明 
---- | --- | ---- 
-before | function | 插入前执行回调函数
-after  | function | 插入后执行回调函数
-handle | string &#124; object | 点击触发表情选择展开元素，jQuery对象或者jQuery选择器字符串
-setTextArea | function | 动态设置插入textarea对象，返回jQuery对象
+| 参数 | 类型 | 说明 |
+| --- | --- | --- |
+| before | function | 插入前执行回调函数 |
+| after  | function | 插入后执行回调函数 |
+| handle | string &#124; object | 点击触发表情选择展开元素，jQuery对象或者jQuery选择器字符串 |
+| setTextArea | function | 动态设置插入textarea对象，返回jQuery对象 |
 
 # 开发
 ``` bash
