@@ -15,7 +15,7 @@ jQuery QQ 表情插件。
 # 更新历史
 ## 1.0.2
 
-1. 表情选择由gif转为png，避免一次性载入太多图片
+1. 表情选择由多张gif转为一张png背景图，避免一次性载入太多图片
 2. 表情数量扩充为105
 3. css 样式改为独立
 4. 去掉“imgPath”参数
@@ -60,7 +60,6 @@ $.qqface({
 
 ``` js
 $.qqface({
-    imgPath : 'gif/',
     handle : 'a.face',
     // 动态设置表情插入的文本框
     setTextArea : function(current) {
@@ -69,6 +68,14 @@ $.qqface({
 });
 
 ```
+
+# 参数列表
+参数 | 类型 | 说明
+--- | --- | ----
+before | function | 插入前执行回调函数
+after  | function | 插入后执行回调函数
+handle | string \| object | 点击触发表情选择展开元素，jQuery对象或者jQuery选择器字符串
+setTextArea | function | 动态设置插入textarea对象，返回jQuery对象
 
 # 开发
 ``` bash
