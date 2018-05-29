@@ -70,11 +70,11 @@ $.qqface({
 ```
 
 # 参数列表
-参数 | 类型 | 说明
---- | --- | ----
+参数 | 类型 | 说明 
+--- | --- | ---- 
 before | function | 插入前执行回调函数
 after  | function | 插入后执行回调函数
-handle | string \| object | 点击触发表情选择展开元素，jQuery对象或者jQuery选择器字符串
+handle | string &#124; object | 点击触发表情选择展开元素，jQuery对象或者jQuery选择器字符串
 setTextArea | function | 动态设置插入textarea对象，返回jQuery对象
 
 # 开发
