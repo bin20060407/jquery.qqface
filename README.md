@@ -202,8 +202,28 @@ npm run build
 注：
 符号对应微信公众号表情符号
 
+# 显示
+
+## JavaScript
+
+``` javascript
+// todo 预处理
+content.replace(/\[em_(\d+)\]/g, '<img src="https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/$1.gif" />');
+
+```
+
+## PHP
+
+``` php
+// 预处理
+$str = nl2br(htmlspecialchars($str));
+preg_replace('/\[em_(\d+)\]/', 'https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/$1.gif', $str);
+
+```
+**注意：** 不管是前端还是后端输出显示，都应做转换换行和转义HTML实体符处理（`预防XSS攻击`），参照上方PHP代码
+
 # Todo
-- [ ] 新增js、PHP最终显示表情说明
+- [x] 新增js、PHP最终显示表情说明
 - [ ] css 样式支持分离和一起
 - [ ] 公布到npm
 
