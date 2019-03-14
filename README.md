@@ -228,5 +228,5 @@ preg_replace('/\[em_(\d+)\]/', 'https://res.wx.qq.com/mpres/htmledition/images/i
 - [ ] 公布到npm
 
 # License
-Copyright (c) 2018 [Binbin](http://bbmz.org/) Licensed under the MIT License.
+Copyright (c) 2019 [Binbin](http://manlt.com/) Licensed under the MIT License.
 
